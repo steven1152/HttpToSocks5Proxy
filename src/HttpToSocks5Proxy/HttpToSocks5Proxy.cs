@@ -410,5 +410,7 @@ namespace MihaZupan
             Stopped = true;
             InternalServerSocket.Close();
         }
+
+        public override string ToString() => $"socks5://{ProxyList[0].Hostname}:{ProxyList[0].Port}";
     }
 }
